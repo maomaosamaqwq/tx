@@ -1,0 +1,162 @@
+[
+  {
+    "word": "logIfCreditResourceUsed",
+    "explanation": "布尔值。如果为 true，则在资源（信用点）被使用时记录日志。"
+  },
+  {
+    "word": "autoTriggerCooldownTime_allowDangerousHighCPU",
+    "explanation": "布尔值。如果为 true，将无视 CPU 负荷强制使用自动触发冷却时间，可能导致高 CPU 占用。"
+  },
+  {
+    "word": "reclaimPrice",
+    "explanation": "设置单位被回收时，玩家获得的资源数量。例如：credits=700。这会覆盖基于单位价格的计算。"
+  },
+  {
+    "word": "generation_active",
+    "explanation": "一个逻辑布尔条件。当条件满足时（例如，单位在指定秒数内未受伤），可以激活资源生产。例子：if self.hasTakenDamage(withinSeconds=0.3)"
+  },
+  {
+    "word": "canNotBeDamaged",
+    "explanation": "布尔值。如果为 true，单位不会受到大多数攻击的伤害，用于制作抗伤单位。"
+  },
+  {
+    "word": "createOnNeutralTeam",
+    "explanation": "布尔值。如果为 true，创建的单位属于中立队伍。"
+  },
+  {
+    "word": "transportUnitsEachUnitAlwaysUsesSingleSlot",
+    "explanation": "布尔值。如果为 true，所有被运输的单位在运输载具中只占用 1 个槽位。"
+  },
+  {
+    "word": "teamColoringMode",
+    "explanation": "设置团队的着色模式。可选值：pureGreen（全绿）、hueAdd（色相加入）、hueShift（色相偏移）、disabled（禁用）。"
+  },
+  {
+    "word": "drawLayer",
+    "explanation": "定义单位图像的绘制层级。可选值如：experimentals（实验层）、underwater（水下）、ground（地面）、air（空中）、top（顶部）等。"
+  },
+  {
+    "word": "removeOnAttack",
+    "explanation": "布尔值。如果为 true，单位在攻击后会立即消失。"
+  },
+  {
+    "word": "pushForce",
+    "explanation": "数值。定义抛射体击中单位时产生的推力大小。值过大可能导致单位被推得过远。"
+  },
+  {
+    "word": "autoTriggerOnEvent",
+    "explanation": "设置触发动作的特定事件。例如：transportUnloadedOrRemovedUnit（当运输单位卸下或移除单位时）。"
+  },
+  {
+    "word": "spawnChance",
+    "explanation": "浮点数。单位或抛射体生成的概率，默认为 1（100%）。例如：spawnChance=0.5 表示 50% 几率。"
+  },
+  {
+    "word": "offsetRandomX/offsetRandomY",
+    "explanation": "浮点数。在生成单位或抛射体时，在 X 轴或 Y 轴方向上的随机位置偏移量（单位：像素）。"
+  },
+  {
+    "word": "neutralTeam",
+    "explanation": "布尔值。如果为 true，则生成（刷出）的单位属于中立队伍，而不是所属玩家的队伍。"
+  },
+  {
+    "word": "skipIfOverlapping",
+    "explanation": "布尔值。如果为 true，当生成位置无效（例如陆地单位在水中）时，会跳过并忽略这个单位的生成。"
+  },
+  {
+    "word": "copyWaypointsFrom",
+    "explanation": "引用一个单位。将目标单位上的所有路径点复制给新创建的单位。例如：copyWaypointsFrom=self"
+  },
+  {
+    "word": "@copyFromSection",
+    "explanation": "用于在任意节中引用并复制另一个节（如模板、动作、抛射体）的代码。例如：@copyFromSection:template_name"
+  },
+  {
+    "word": "@define",
+    "explanation": "在一个节中定义一个局部变量。例如：@define targetEffect: boom"
+  },
+  {
+    "word": "${X}",
+    "explanation": "引用一个变量（X）的值。可用于字符串拼接或计算中。"
+  },
+  {
+    "word": "${section.key}",
+    "explanation": "引用指定节（section）中某个键（key）的值，用于动态计算。例如：addResources:credits=${core.price * 2}"
+  },
+  {
+    "word": "记录信用资源使用",
+    "explanation": "布尔值。如果为 true，则在资源（信用点）被使用时记录日志。"
+  },
+  {
+    "word": "自动触发冷却时间_允许危险高CPU",
+    "explanation": "布尔值。如果为 true，将无视 CPU 负荷强制使用自动触发冷却时间，可能导致高 CPU 占用。"
+  },
+  {
+    "word": "回收价格",
+    "explanation": "设置单位被回收时，玩家获得的资源数量。例如：credits=700。这会覆盖基于单位价格的计算。"
+  },
+  {
+    "word": "激活时生成",
+    "explanation": "一个逻辑布尔条件。当条件满足时（例如，单位在指定秒数内未受伤），可以激活资源生产。例子：if self.hasTakenDamage(withinSeconds=0.3)"
+  },
+  {
+    "word": "不可被伤害",
+    "explanation": "布尔值。如果为 true，单位不会受到大多数攻击的伤害，用于制作抗伤单位。"
+  },
+  {
+    "word": "创建于中立队伍",
+    "explanation": "布尔值。如果为 true，创建的单位属于中立队伍。"
+  },
+  {
+    "word": "每个运输单位始终占用单槽位",
+    "explanation": "布尔值。如果为 true，所有被运输的单位在运输载具中只占用 1 个槽位。"
+  },
+  {
+    "word": "团队着色模式",
+    "explanation": "设置团队的着色模式。可选值：pureGreen（全绿）、hueAdd（色相加入）、hueShift（色相偏移）、disabled（禁用）。"
+  },
+  {
+    "word": "绘制层",
+    "explanation": "定义单位图像的绘制层级。可选值如：experimentals（实验层）、underwater（水下）、ground（地面）、air（空中）、top（顶部）等。"
+  },
+  {
+    "word": "攻击后移除",
+    "explanation": "布尔值。如果为 true，单位在攻击后会立即消失。"
+  },
+  {
+    "word": "推动力",
+    "explanation": "数值。定义抛射体击中单位时产生的推力大小。值过大可能导致单位被推得过远。"
+  },
+  {
+    "word": "事件自动触发",
+    "explanation": "设置触发动作的特定事件。例如：transportUnloadedOrRemovedUnit（当运输单位卸下或移除单位时）。"
+  },
+  {
+    "word": "生成几率",
+    "explanation": "浮点数。单位或抛射体生成的概率，默认为 1（100%）。例如：spawnChance=0.5 表示 50% 几率。"
+  },
+  {
+    "word": "随机X偏移/随机Y偏移",
+    "explanation": "浮点数。在生成单位或抛射体时，在 X 轴或 Y 轴方向上的随机位置偏移量（单位：像素）。"
+  },
+  {
+    "word": "中立队伍",
+    "explanation": "布尔值。如果为 true，则生成（刷出）的单位属于中立队伍，而不是所属玩家的队伍。"
+  },
+  {
+    "word": "重叠时跳过",
+    "explanation": "布尔值。如果为 true，当生成位置无效（例如陆地单位在水中）时，会跳过并忽略这个单位的生成。"
+  },
+  {
+    "word": "复制路径点自",
+    "explanation": "引用一个单位。将目标单位上的所有路径点复制给新创建的单位。例如：copyWaypointsFrom=self"
+  },
+  {
+    "word": "@复制自节",
+    "explanation": "用于在任意节中引用并复制另一个节（如模板、动作、抛射体）的代码。例如：@copyFromSection:template_name"
+  },
+  {
+    "word": "@定义",
+    "explanation": "在一个节中定义一个局部变量。例如：@define targetEffect: boom"
+  }
+]
