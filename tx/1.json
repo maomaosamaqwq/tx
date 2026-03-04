@@ -1,0 +1,322 @@
+[
+  {
+    "word": "useAsBuilder",
+    "explanation": "useAsBuilder/用作建造者 - 作为建造者。如果单位可以建造或维修建筑物，则设置为true。 默认为[core] isBuilder。"
+  },
+  {
+    "word": "用作建造者",
+    "explanation": "useAsBuilder/用作建造者 - 作为建造者。如果单位可以建造或维修建筑物，则设置为true。 默认为[core] isBuilder。"
+  },
+  {
+    "word": "ai_upgradePriority",
+    "explanation": "ai_upgradePriority/AI升级优先级 - 升级优先级。默认值为0.06。 设置在0-1之间，越高，表示AI更有可能先于其他升级该单位。"
+  },
+  {
+    "word": "AI升级优先级",
+    "explanation": "ai_upgradePriority/AI升级优先级 - 升级优先级。默认值为0.06。 设置在0-1之间，越高，表示AI更有可能先于其他升级该单位。"
+  },
+  {
+    "word": "buildPriority",
+    "explanation": "buildPriority/建造优先级 - 建造优先级，填0-1。 越大越AI越可能造。"
+  },
+  {
+    "word": "建造优先级",
+    "explanation": "buildPriority/建造优先级 - 建造优先级，填0-1。 越大越AI越可能造。"
+  },
+  {
+    "word": "onActions",
+    "explanation": "onActions/动画条件 - 动画触发条件：移动、攻击、闲置、在建造中、建造中并将动画拉伸至建造时长、生产中、未知。"
+  },
+  {
+    "word": "动画条件",
+    "explanation": "onActions/动画条件 - 动画触发条件：移动、攻击、闲置、在建造中、建造中并将动画拉伸至建造时长、生产中、未知。"
+  },
+  {
+    "word": "blendIn",
+    "explanation": "blendIn/融入时间 - 与上一个动画融合时间。"
+  },
+  {
+    "word": "融入时间",
+    "explanation": "blendIn/融入时间 - 与上一个动画融合时间。"
+  },
+  {
+    "word": "text",
+    "explanation": "text/文本 - 界面中显示的文字。"
+  },
+  {
+    "word": "文本",
+    "explanation": "text/文本 - 界面中显示的文字。"
+  },
+  {
+    "word": "price",
+    "explanation": "price/价格 - 此行为需要的价格，可以是多种资源或自定义资源。如果不满足则行为不可用。如果没设定资源类型则默认为资金。如果价格为0，AI可能很少甚至不会使用。"
+  },
+  {
+    "word": "价格",
+    "explanation": "price/价格 - 此行为需要的价格，可以是多种资源或自定义资源。如果不满足则行为不可用。如果没设定资源类型则默认为资金。如果价格为0，AI可能很少甚至不会使用。"
+  },
+  {
+    "word": "convertTo",
+    "explanation": "convertTo/转换成 - 将你的单位转换为另一个单位。许多属性被保留。"
+  },
+  {
+    "word": "转换成",
+    "explanation": "convertTo/转换成 - 将你的单位转换为另一个单位。许多属性被保留。"
+  },
+  {
+    "word": "autoTrigger",
+    "explanation": "autoTrigger/自动触发 - 如果为true，则立即触发此操作的效果（忽略价格，isActive，isVisible，buildSpeed等）。"
+  },
+  {
+    "word": "自动触发",
+    "explanation": "autoTrigger/自动触发 - 如果为true，则立即触发此操作的效果（忽略价格，isActive，isVisible，buildSpeed等）。"
+  },
+  {
+    "word": "maxAttackRange",
+    "explanation": "maxAttackRange/攻击距离 - 最大攻击距离。（会乘以globalScale，但不建议使用globalScale）。"
+  },
+  {
+    "word": "攻击距离",
+    "explanation": "maxAttackRange/攻击距离 - 最大攻击距离。（会乘以globalScale，但不建议使用globalScale）。"
+  },
+  {
+    "word": "canAttackFlyingUnits",
+    "explanation": "canAttackFlyingUnits/可攻击空中单位 - 可以攻击空中单位。"
+  },
+  {
+    "word": "可攻击空中单位",
+    "explanation": "canAttackFlyingUnits/可攻击空中单位 - 可以攻击空中单位。"
+  },
+  {
+    "word": "techLevel",
+    "explanation": "techLevel/科技等级 - “techLevel”单位生成参数，主要用于内置的单元和设置damagingBorder大小。计算方式是数值X地块5格。最小值为0，圈不可见。如填1则半径为5格。"
+  },
+  {
+    "word": "科技等级",
+    "explanation": "techLevel/科技等级 - “techLevel”单位生成参数，主要用于内置的单元和设置damagingBorder大小。计算方式是数值X地块5格。最小值为0，圈不可见。如填1则半径为5格。"
+  },
+  {
+    "word": "name",
+    "explanation": "name/名字 - 定义单位原始名称，可以是中文。游戏使用它区分其它单位。如果没有在displayText或者语言文件设置显示名称，那么它也将作为单位的显示名称。"
+  },
+  {
+    "word": "名字",
+    "explanation": "name/名字 - 定义单位原始名称，可以是中文。游戏使用它区分其它单位。如果没有在displayText或者语言文件设置显示名称，那么它也将作为单位的显示名称。"
+  },
+  {
+    "word": "maxHp",
+    "explanation": "maxHp/生命值 - 单位最大生命值，默认生成时即为此值。"
+  },
+  {
+    "word": "生命值",
+    "explanation": "maxHp/生命值 - 单位最大生命值，默认生成时即为此值。"
+  },
+  {
+    "word": "radius",
+    "explanation": "radius/半径 - 单位的实际碰擦体积，也是实际的可选择范围。其光圈在displayRadius覆盖时真实体积不变。"
+  },
+  {
+    "word": "半径",
+    "explanation": "radius/半径 - 单位的实际碰擦体积，也是实际的可选择范围。其光圈在displayRadius覆盖时真实体积不变。"
+  },
+  {
+    "word": "isBuilding",
+    "explanation": "isBuilding/是建筑 - 定义单位是否为建筑物。"
+  },
+  {
+    "word": "是建筑",
+    "explanation": "isBuilding/是建筑 - 定义单位是否为建筑物。"
+  },
+  {
+    "word": "layer",
+    "explanation": "layer/绘制图层 - 绘制贴画的图层，参数可以为（shadow, beforeBody, afterBody, onTop, beforeUI）。"
+  },
+  {
+    "word": "绘制图层",
+    "explanation": "layer/绘制图层 - 绘制贴画的图层，参数可以为（shadow, beforeBody, afterBody, onTop, beforeUI）。"
+  },
+  {
+    "word": "image",
+    "explanation": "image/图像 - 使用图像作为贴画的图片。"
+  },
+  {
+    "word": "图像",
+    "explanation": "image/图像 - 使用图像作为贴画的图片。"
+  },
+  {
+    "word": "x",
+    "explanation": "x/子单位X轴位置 - 子单位X轴位置。"
+  },
+  {
+    "word": "子单位X轴位置",
+    "explanation": "x/子单位X轴位置 - 子单位X轴位置。"
+  },
+  {
+    "word": "redirectDamageToParent",
+    "explanation": "redirectDamageToParent/重定向伤害到父单位 - 将对附属造成的伤害重定向到父单位，而不是伤害子单位自身。"
+  },
+  {
+    "word": "重定向伤害到父单位",
+    "explanation": "redirectDamageToParent/重定向伤害到父单位 - 将对附属造成的伤害重定向到父单位，而不是伤害子单位自身。"
+  },
+  {
+    "word": "displayName",
+    "explanation": "displayName/显示名称 - 用户界面中此资源的名称。"
+  },
+  {
+    "word": "显示名称",
+    "explanation": "displayName/显示名称 - 用户界面中此资源的名称。"
+  },
+  {
+    "word": "image",
+    "explanation": "image/主体图像 - 填图片名称，格式为png，作为单位主体图像。"
+  },
+  {
+    "word": "主体图像",
+    "explanation": "image/主体图像 - 填图片名称，格式为png，作为单位主体图像。"
+  },
+  {
+    "word": "rotate_with_direction",
+    "explanation": "rotate_with_direction/随角度旋转 - 默认为true。设置为false时将单位图像锁定为0度。通常与animation_direction_*一起用作多向视图。"
+  },
+  {
+    "word": "随角度旋转",
+    "explanation": "rotate_with_direction/随角度旋转 - 默认为true。设置为false时将单位图像锁定为0度。通常与animation_direction_*一起用作多向视图。"
+  },
+  {
+    "word": "x",
+    "explanation": "x/腿脚X轴位置 - 设置脚在X轴上的位置。"
+  },
+  {
+    "word": "腿脚X轴位置",
+    "explanation": "x/腿脚X轴位置 - 设置脚在X轴上的位置。"
+  },
+  {
+    "word": "image_end",
+    "explanation": "image_end/末端图像 - 末端图像，相当于脚。"
+  },
+  {
+    "word": "末端图像",
+    "explanation": "image_end/末端图像 - 末端图像，相当于脚。"
+  },
+  {
+    "word": "life",
+    "explanation": "life/效果存在时间 - 默认值为200。到时间效果消失。 设置得尽可能低以减少效果开销。"
+  },
+  {
+    "word": "效果存在时间",
+    "explanation": "life/效果存在时间 - 默认值为200。到时间效果消失。 设置得尽可能低以减少效果开销。"
+  },
+  {
+    "word": "attachedToUnit",
+    "explanation": "attachedToUnit/附着在单位上 - 此效果产生时吸附到目标单位或抛射体。将与之一起移动。"
+  },
+  {
+    "word": "附着在单位上",
+    "explanation": "attachedToUnit/附着在单位上 - 此效果产生时吸附到目标单位或抛射体。将与之一起移动。"
+  },
+  {
+    "word": "movementType",
+    "explanation": "movementType/运动类型 - 定义单位将能够通过的地形以及与单位类型相关的其他属性。类型：无、陆地、建筑、空中、水面、两栖、跨悬崖、跨水和悬崖。"
+  },
+  {
+    "word": "运动类型",
+    "explanation": "movementType/运动类型 - 定义单位将能够通过的地形以及与单位类型相关的其他属性。类型：无、陆地、建筑、空中、水面、两栖、跨悬崖、跨水和悬崖。"
+  },
+  {
+    "word": "moveSpeed",
+    "explanation": "moveSpeed/移动速度 - 单位的最大移动速度。"
+  },
+  {
+    "word": "移动速度",
+    "explanation": "moveSpeed/移动速度 - 单位的最大移动速度。"
+  },
+  {
+    "word": "searchTags",
+    "explanation": "searchTags/检索标签 - 搜索至少包含这些标签之一的任何单位。"
+  },
+  {
+    "word": "检索标签",
+    "explanation": "searchTags/检索标签 - 搜索至少包含这些标签之一的任何单位。"
+  },
+  {
+    "word": "blocksPlacement",
+    "explanation": "blocksPlacement/禁止放置 - 禁止放置。默认为true。"
+  },
+  {
+    "word": "禁止放置",
+    "explanation": "blocksPlacement/禁止放置 - 禁止放置。默认为true。"
+  },
+  {
+    "word": "credits",
+    "explanation": "credits/资金 - 铁锈中默认用于全局的资金。"
+  },
+  {
+    "word": "资金",
+    "explanation": "credits/资金 - 铁锈中默认用于全局的资金。"
+  },
+  {
+    "word": "life",
+    "explanation": "life/存在时间 - 开火后炮弹在没命中时的存活时间，单位为帧。60为1s。多少合适取决于速度与射程。"
+  },
+  {
+    "word": "存在时间",
+    "explanation": "life/存在时间 - 开火后炮弹在没命中时的存活时间，单位为帧。60为1s。多少合适取决于速度与射程。"
+  },
+  {
+    "word": "directDamage",
+    "explanation": "directDamage/直接伤害 - 击中对目标单位造成伤害。不适用于targetGround:true。"
+  },
+  {
+    "word": "直接伤害",
+    "explanation": "directDamage/直接伤害 - 击中对目标单位造成伤害。不适用于targetGround:true。"
+  },
+  {
+    "word": "areaDamage",
+    "explanation": "areaDamage/范围伤害 - 范围伤害值，此区域内敌方单位都将受到损伤，默认向边缘递减。"
+  },
+  {
+    "word": "范围伤害",
+    "explanation": "areaDamage/范围伤害 - 范围伤害值，此区域内敌方单位都将受到损伤，默认向边缘递减。"
+  },
+  {
+    "word": "speed",
+    "explanation": "speed/速度 - 抛射体飞行速度，单位是每帧飞行像素。铁锈地块1格20像素，填1则每秒飞行3格。"
+  },
+  {
+    "word": "速度",
+    "explanation": "speed/速度 - 抛射体飞行速度，单位是每帧飞行像素。铁锈地块1格20像素，填1则每秒飞行3格。"
+  },
+  {
+    "word": "instant",
+    "explanation": "instant/瞬间命中 - 开火时立即击中目标，用于激光、闪电、波束。"
+  },
+  {
+    "word": "瞬间命中",
+    "explanation": "instant/瞬间命中 - 开火时立即击中目标，用于激光、闪电、波束。"
+  },
+  {
+    "word": "if",
+    "explanation": "if/如果 - 所有逻辑布尔值使用if开始，除非仅使用true/false。"
+  },
+  {
+    "word": "如果",
+    "explanation": "if/如果 - 所有逻辑布尔值使用if开始，除非仅使用true/false。"
+  },
+  {
+    "word": "self.hp()",
+    "explanation": "self.hp()/自身血量 - 自身血量条件。(参数:greaterThan,lessThan,equalTo,empty,full)。"
+  },
+  {
+    "word": "自身血量",
+    "explanation": "self.hp()/自身血量 - 自身血量条件。(参数:greaterThan,lessThan,equalTo,empty,full)。"
+  },
+  {
+    "word": "self.isMoving()",
+    "explanation": "self.isMoving()/自身在移动 - 如果自身在移动则执行。"
+  },
+  {
+    "word": "自身在移动",
+    "explanation": "self.isMoving()/自身在移动 - 如果自身在移动则执行。"
+  }
+]
